@@ -15,10 +15,12 @@ public class Customer {
 	@Size(min = 1, message="This field is required.")
 	private String lastName;
 	
+	
 	@NotNull(message="This field is required.")
 	@Min(value=0, message="Must be greater than or equal to zero.")
 	@Max(value=10, message="Must be less than or equal to ten.")
 	private Integer freePasses;
+	
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="This field requires five characters or digits.")
 	private String postalCode;
